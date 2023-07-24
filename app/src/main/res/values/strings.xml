@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Eco Health</string>
+    <string name="tv_language">Language</string>
+    <string name="tv_weight">Weight</string>
+    <string name="tv_currency">Currency</string>
+    <string name="selected_item">Selected item:</string>
+    <string name="select_weight">Selected Weight</string>
+    <string name="btn_lang_next">Next</string>
+    <string name="select_currency">Select Currency</string>
+    <string name="select_lang">Select Language</string>
+
+    <string-array name="Languages">
+        <item>English</item>
+        <item>Spanish</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
