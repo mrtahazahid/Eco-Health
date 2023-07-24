@@ -3,16 +3,17 @@ package com.cs.ecohealth.screens.onboarding
 import android.content.Context
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.cs.ecohealth.R
 import com.cs.ecohealth.databinding.FragmentCurrencyBinding
+
 
 class CurrencyFragment : Fragment() {
 
@@ -52,7 +53,10 @@ class CurrencyFragment : Fragment() {
         }
 
         binding.btnLangNext.setOnClickListener {
-            findNavController().navigate(R.id.action_currencyFragment_to_homeFragment)
+            findNavController().navigate(R.id.action_currencyFragment_to_blankFragment)
+            /*val i = Intent(activity, HomeActivity::class.java)
+            startActivity(i)
+            (activity as Activity?)!!.overridePendingTransition(0, 0)*/
             onBoardingFinished()
         }
 

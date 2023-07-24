@@ -15,29 +15,22 @@
             android:id="@+id/action_splashFragment_to_langFragment"
             app:destination="@id/langFragment" />
         <action
-            android:id="@+id/action_splashFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_splashFragment_to_blankFragment"
+            app:destination="@id/blankFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
-    <fragment
-        android:id="@+id/viewPagerFragment"
-        android:name="com.cs.ecohealth.screens.onboarding.ViewPagerFragment"
-        android:label="fragment_view_pager"
-        tools:layout="@layout/fragment_view_pager" >
 
-    </fragment>
-    <fragment
-        android:id="@+id/homeFragment"
-        android:name="com.cs.ecohealth.screens.dashboard.HomeFragment"
-        android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/currencyFragment"
         android:name="com.cs.ecohealth.screens.onboarding.CurrencyFragment"
         android:label="fragment_currency"
         tools:layout="@layout/fragment_currency" >
         <action
-            android:id="@+id/action_currencyFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_currencyFragment_to_blankFragment"
+            app:destination="@id/blankFragment"
+            app:popUpTo="@id/splashFragment"
+            app:popUpToInclusive="true" />
     </fragment>
     <fragment
         android:id="@+id/langFragment"
@@ -57,4 +50,9 @@
             android:id="@+id/action_weightFragment_to_currencyFragment"
             app:destination="@id/currencyFragment" />
     </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.cs.ecohealth.screens.dashboard.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" />
 </navigation>

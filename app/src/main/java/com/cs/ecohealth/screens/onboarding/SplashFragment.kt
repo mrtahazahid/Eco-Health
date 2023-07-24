@@ -20,7 +20,7 @@ class SplashFragment : Fragment() {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         Handler().postDelayed({
             if(onBoardingFinished()){
-                findNavController().navigate(R.id.action_splashFragment_to_homeFragment)
+                findNavController().navigate(R.id.action_splashFragment_to_blankFragment)
             }else{
                 findNavController().navigate(R.id.action_splashFragment_to_langFragment)
             }
