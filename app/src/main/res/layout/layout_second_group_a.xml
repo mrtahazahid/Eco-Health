@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/ll_genetics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_genetics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Genetics"
+                android:textColor="@color/mainGreen" />
+
+            <LinearLayout
+                android:id="@+id/ll_genetics_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background">
+
+                <Spinner
+                    android:id="@+id/genetics_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:textColor="@color/mainGreen" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_no_of_hens_in_stock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_no_of_hens_in_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Number of hens in flock"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_genetics"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_produced_egg_numbers_per_hen_housed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_produced_egg_numbers_per_hen_housed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Produced egg numbers per hen housed"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_produced_egg_numbers_per_hen_housed"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_average_egg_weight_g"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_average_egg_weight_g"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Average egg weight (g)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_average_egg_weight_g"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_egg_price_1st_quality_dollar_egg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_egg_price_1st_quality_dollar_egg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Egg Price 1st Quality ($/egg)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_egg_price_1st_quality_dollar_egg"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_egg_price_1st_quality_dollar_kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_egg_price_1st_quality_dollar_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Egg Price 1st Quality ($/kg)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_egg_price_1st_quality_dollar_kg"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_feed_price_dollar_kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_feed_price_dollar_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Feed Price ($/kg)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_feed_price_dollar_kg"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_hen_price_dollar_hen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_hen_price_dollar_hen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Hen Price ($/hen)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_hen_price_dollar_hen"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_egg_price_2nd_quality_dollar_egg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_egg_price_2nd_quality_dollar_egg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Egg Price 2nd Quality ($/egg)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_egg_price_2nd_quality_dollar_egg"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_egg_price_2nd_quality_dollar_kg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_egg_price_2nd_quality_dollar_kg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Egg Price 2nd Quality ($/kg)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_egg_price_2nd_quality_dollar_kg"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Product"
+                android:textColor="@color/mainGreen" />
+
+            <LinearLayout
+                android:id="@+id/ll_product_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:textColor="@color/mainGreen">
+
+                <Spinner
+                    android:id="@+id/product_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_price_dollar_per_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_price_dollar_per_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Price ($ / per product)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_price_dollar_per_product"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:inputType="numberDecimal"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Aivlosin_dosage_mg_kg_BW_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Aivlosin_dosage_mg_kg_BW_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Aivlosin dosage mg/kg BW/day"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_Aivlosin_dosage_mg_kg_BW_day"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/et_bg"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Days_per_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Days_per_treatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Days per treatment"
+                android:textColor="@color/mainGreen" />
+
+            <LinearLayout
+                android:id="@+id/ll_Days_per_treatment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:textColor="@color/mainGreen">
+
+                <Spinner
+                    android:id="@+id/Days_per_treatment_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Aivlosin_1_g_activity_price_dollar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Aivlosin_1_g_activity_price_dollar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Aivlosin 1 g activity price ($)"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_Aivlosin_1_g_activity_price_dollar"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/et_bg"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Number_of_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Number_of_treatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Number of treatment"
+                android:textColor="@color/mainGreen" />
+
+            <LinearLayout
+                android:id="@+id/ll_Number_of_treatment_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:textColor="@color/mainGreen">
+
+                <Spinner
+                    android:id="@+id/Number_of_treatment_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Treatment_age_week"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Treatment_age_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Treatment age/week"
+                android:textColor="@color/mainGreen" />
+
+            <LinearLayout
+                android:id="@+id/ll_Treatment_age_week_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/spinner_background"
+                android:textColor="@color/mainGreen">
+
+                <Spinner
+                    android:id="@+id/Treatment_age_week_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Aivlosin_needs_in_g_per_hen_for_treatment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Aivlosin_needs_in_g_per_hen_for_treatment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Aivlosin needs in g per hen for treatment"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_Aivlosin_needs_in_g_per_hen_for_treatment"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/et_bg"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_Aivlosin_cost_per_hen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_Aivlosin_cost_per_hen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Aivlosin cost per hen"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:id="@+id/et_Aivlosin_cost_per_hen"
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/et_bg"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

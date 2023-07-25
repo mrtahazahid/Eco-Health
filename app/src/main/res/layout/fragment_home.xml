@@ -4,11 +4,42 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_color"
     tools:context=".screens.dashboard.HomeFragment">
 
     <TextView
+        android:layout_width="0dp"
+        android:layout_height="?android:attr/actionBarSize"
+        android:text="Home"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="@dimen/_20ssp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <!--<com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home"/>
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="30dp"
+        app:expandable_duration="300"
+        app:expandable_isExpanded="false"
+        app:expandable_parentLayout="@layout/layout_parent_group_a"
+        app:expandable_secondLayout="@layout/layout_second_group_a"
+        app:expandable_showSpinner="true"
+        app:expandable_spinner="@drawable/ic_arrow_down"
+        app:expandable_spinner_animate="true"
+        app:expandable_spinner_gravity="start"
+        app:expandable_spinner_margin="14dp"
+        app:expandable_spinner_size="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

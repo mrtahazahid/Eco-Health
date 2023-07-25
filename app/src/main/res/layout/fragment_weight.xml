@@ -22,7 +22,9 @@
         <TextView
             android:id="@+id/tv_heading"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="?android:attr/actionBarSize"
+            android:textAlignment="center"
+            android:gravity="center"
             android:layout_marginTop="@dimen/_15sdp"
             android:text="@string/select_weight"
             android:textColor="@color/lightGreen"
@@ -82,22 +84,27 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent">
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_kg"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:text="KG"
-                app:backgroundTint="@color/teal_700" />
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13ssp"
+                android:background="@drawable/bg_btn" />
 
-            <Button
+            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btn_unit"
                 android:layout_width="0dp"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:text="UNIT"
-                android:textColor="@color/black"
-                app:backgroundTint="@color/white" />
+                android:textSize="@dimen/_13ssp"
+                android:background="@drawable/bg_btn"
+                android:textColor="@android:color/darker_gray"
+                app:backgroundTint="@color/white"
+                />
 
         </LinearLayout>
 

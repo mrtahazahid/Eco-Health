@@ -9,4 +9,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="lightGreen">#006344</color>
     <color name="mainGreen">#34816A</color>
+    <color name="boxGreen">#E1ECE9</color>
+    <color name="Brown">#AE9A63</color>
 </resources>
