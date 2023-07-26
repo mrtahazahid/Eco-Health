@@ -28,6 +28,15 @@ class HomeFragment : Fragment() {
             }
         }
 
+        binding.expandableGroup2.parentLayout.setOnClickListener {
+            if (binding.expandableGroup2.isExpanded){
+                binding.expandableGroup2.collapse()
+            }
+            else{
+                binding.expandableGroup2.expand()
+            }
+        }
+
 
 
 

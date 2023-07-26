@@ -1,45 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_color"
+    android:orientation="vertical"
     tools:context=".screens.dashboard.HomeFragment">
 
-    <TextView
-        android:id="@+id/tv_heading"
-        android:layout_width="0dp"
-        android:layout_height="?android:attr/actionBarSize"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:gravity="center"
-        android:text="Home"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_20ssp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <com.skydoves.expandablelayout.ExpandableLayout
-        android:id="@+id/expandable_group_1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:background="@color/white"
-        app:expandable_duration="300"
-        app:expandable_isExpanded="false"
-        app:expandable_showSpinner="true"
-        app:expandable_spinner="@drawable/ic_arrow_down"
-        app:expandable_spinner_animate="true"
-        app:expandable_spinner_margin="14dp"
-        app:expandable_spinner_gravity="end"
-        app:expandable_spinner_size="32dp"
-        app:expandable_parentLayout="@layout/layout_parent_group_a"
-        app:expandable_secondLayout="@layout/layout_second_group_a"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_heading" />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/tv_heading"
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:text="Home"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_20ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_group_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:expandable_animation="bounce"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/layout_parent_group_a"
+            app:expandable_secondLayout="@layout/layout_second_group_a"
+            />
+
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/expandable_group_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_20sdp"
+            app:expandable_animation="bounce"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/layout_parent_group_b"
+            app:expandable_secondLayout="@layout/layout_second_group_b" />
+
+    </LinearLayout>
+
+</ScrollView>
