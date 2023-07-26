@@ -40,7 +40,8 @@
             app:expandable_duration="300"
             app:expandable_isExpanded="false"
             app:expandable_parentLayout="@layout/layout_parent_group_a"
-            app:expandable_secondLayout="@layout/layout_second_group_a" />
+            app:expandable_secondLayout="@layout/layout_second_group_a"
+            app:expandable_spinner_color="@color/Brown" />
 
         <com.skydoves.expandablelayout.ExpandableLayout
             android:id="@+id/expandable_group_2"
@@ -53,7 +54,8 @@
             app:expandable_duration="300"
             app:expandable_isExpanded="false"
             app:expandable_parentLayout="@layout/layout_parent_group_b"
-            app:expandable_secondLayout="@layout/layout_second_group_b" />
+            app:expandable_secondLayout="@layout/layout_second_group_b"
+            app:expandable_spinner_color="@color/Brown" />
 
     </LinearLayout>
 
