@@ -56,7 +56,6 @@ class HomeFragment : Fragment() {
 
         return binding.root
     }
-
     private fun noOfTreatmentData() {
         noOfTreatmentList = ArrayList()
 
@@ -105,7 +104,6 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
     private fun treatmentWeekData() {
         treatmentWeekList = ArrayList()
 
@@ -154,7 +152,6 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
     private fun treatmentData() {
         daysPerTreatmentsList = ArrayList()
 
@@ -204,7 +201,6 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
     private fun productData() {
         productsList = ArrayList()
 
@@ -265,7 +261,6 @@ class HomeFragment : Fragment() {
             }
         }
     }
-
     private fun geneticsData() {
         geneticsList = ArrayList()
 
@@ -313,4 +308,5 @@ class HomeFragment : Fragment() {
             }
         }
     }
+
 }

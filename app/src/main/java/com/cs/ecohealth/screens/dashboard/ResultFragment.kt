@@ -18,6 +18,16 @@ class ResultFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentResultBinding.inflate(inflater, container, false)
+
+        binding.expandableEconomicsResults.parentLayout.setOnClickListener {
+            if (binding.expandableEconomicsResults.isExpanded){
+                binding.expandableEconomicsResults.collapse()
+            }
+            else{
+                binding.expandableEconomicsResults.expand()
+            }
+        }
+
         return binding.root
     }
 }
