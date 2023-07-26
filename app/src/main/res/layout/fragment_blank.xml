@@ -24,6 +24,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
+        app:itemIconTint="@color/mainGreen"
+        app:itemTextColor="@color/mainGreen"
+        app:itemRippleColor="@color/boxGreen"
         app:menu="@menu/nav_menu"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
