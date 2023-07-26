@@ -8,38 +8,38 @@
     tools:context=".screens.dashboard.HomeFragment">
 
     <TextView
+        android:id="@+id/tv_heading"
         android:layout_width="0dp"
         android:layout_height="?android:attr/actionBarSize"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:gravity="center"
         android:text="Home"
         android:textAlignment="center"
-        android:gravity="center"
-        android:textSize="@dimen/_20ssp"
-        android:layout_marginTop="@dimen/_15sdp"
         android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="@dimen/_20ssp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!--<com.skydoves.expandablelayout.ExpandableLayout
-        android:id="@+id/expandable"
+    <com.skydoves.expandablelayout.ExpandableLayout
+        android:id="@+id/expandable_group_1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:background="@color/white"
-        android:layout_marginTop="30dp"
         app:expandable_duration="300"
         app:expandable_isExpanded="false"
-        app:expandable_parentLayout="@layout/layout_parent_group_a"
-        app:expandable_secondLayout="@layout/layout_second_group_a"
         app:expandable_showSpinner="true"
         app:expandable_spinner="@drawable/ic_arrow_down"
         app:expandable_spinner_animate="true"
-        app:expandable_spinner_gravity="start"
         app:expandable_spinner_margin="14dp"
+        app:expandable_spinner_gravity="end"
         app:expandable_spinner_size="32dp"
+        app:expandable_parentLayout="@layout/layout_parent_group_a"
+        app:expandable_secondLayout="@layout/layout_second_group_a"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />-->
+        app:layout_constraintTop_toBottomOf="@id/tv_heading" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

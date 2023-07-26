@@ -17,6 +17,25 @@ class HomeFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentHomeBinding.inflate(inflater, container, false)
+
+
+        binding.expandableGroup1.parentLayout.setOnClickListener {
+            if (binding.expandableGroup1.isExpanded){
+                binding.expandableGroup1.collapse()
+            }
+            else{
+                binding.expandableGroup1.expand()
+            }
+        }
+
+
+
+
+
+
+
+
+
         return binding.root
     }
 }

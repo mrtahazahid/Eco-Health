@@ -562,6 +562,35 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:visibility="invisible"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:text="Aivlosin cost per hen"
+                android:textColor="@color/mainGreen" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="?android:attr/actionBarSize"
+                android:background="@drawable/et_bg"
+                android:inputType="numberDecimal"
+                android:editable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:textColor="@color/mainGreen" />
+
+        </LinearLayout>
+
     </LinearLayout>
 
 </ScrollView>
