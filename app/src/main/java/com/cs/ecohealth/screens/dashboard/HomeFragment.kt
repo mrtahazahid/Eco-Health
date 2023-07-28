@@ -49,10 +49,6 @@ class HomeFragment : Fragment() {
         noOfTreatmentData()
         treatmentWeekData()
 
-        tinyDB.putString("One","1")
-        tinyDB.putString("Two","2")
-        tinyDB.putString("Three","3")
-
         homeViewModel.producedEggNumbersPerHenHoused.observe(viewLifecycleOwner, Observer {
             binding.expandableGroup1.secondLayout.findViewById<EditText>(R.id.et_produced_egg_numbers_per_hen_housed).setText(it)
             binding.expandableGroup1.secondLayout.findViewById<EditText>(R.id.et_average_egg_weight_g).setText(it)

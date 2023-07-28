@@ -23,10 +23,6 @@ class ProductFragment : Fragment() {
         binding = FragmentProductBinding.inflate(inflater, container, false)
         tinyDB = TinyDB(context)
 
-        tinyDB.getString("One")
-        tinyDB.getString("Two")
-        tinyDB.getString("Three")
-
         binding.expandableData1.parentLayout.setOnClickListener {
             if (binding.expandableData1.isExpanded){
                 binding.expandableData1.collapse()
