@@ -12,10 +12,12 @@ import android.widget.ArrayAdapter
 import androidx.navigation.fragment.findNavController
 import com.cs.ecohealth.R
 import com.cs.ecohealth.databinding.FragmentLangBinding
+import com.cs.ecohealth.screens.utils.TinyDB
 
 class LangFragment : Fragment() {
 
     private lateinit var binding: FragmentLangBinding
+    private lateinit var tinyDB : TinyDB
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -23,6 +25,7 @@ class LangFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentLangBinding.inflate(inflater, container, false)
+        tinyDB = TinyDB(context)
 
         val languages = resources.getStringArray(R.array.Languages)
 

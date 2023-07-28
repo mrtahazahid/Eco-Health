@@ -13,11 +13,13 @@ import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.cs.ecohealth.R
 import com.cs.ecohealth.databinding.FragmentCurrencyBinding
+import com.cs.ecohealth.screens.utils.TinyDB
 
 
 class CurrencyFragment : Fragment() {
 
     private lateinit var binding: FragmentCurrencyBinding
+    private lateinit var tinyDB : TinyDB
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,6 +27,7 @@ class CurrencyFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentCurrencyBinding.inflate(inflater, container, false)
+        tinyDB = TinyDB(context)
 
         var currency = arrayOf("$ (USD)", "€ (EUR)", "£ (GBP)")
 

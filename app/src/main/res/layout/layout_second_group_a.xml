@@ -61,8 +61,9 @@
                 android:textColor="@color/mainGreen" />
 
             <EditText
-                android:id="@+id/et_genetics"
+                android:id="@+id/et_no_of_hens_in_stock"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -93,6 +94,7 @@
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
+                android:maxLength="10"
                 android:textColor="@color/mainGreen" />
 
         </LinearLayout>
@@ -120,6 +122,7 @@
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
+                android:maxLength="10"
                 android:textColor="@color/mainGreen" />
 
         </LinearLayout>
@@ -144,6 +147,7 @@
             <EditText
                 android:id="@+id/et_egg_price_1st_quality_dollar_egg"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -171,6 +175,7 @@
             <EditText
                 android:id="@+id/et_egg_price_1st_quality_dollar_kg"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -198,6 +203,7 @@
             <EditText
                 android:id="@+id/et_feed_price_dollar_kg"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -225,6 +231,7 @@
             <EditText
                 android:id="@+id/et_hen_price_dollar_hen"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -252,6 +259,7 @@
             <EditText
                 android:id="@+id/et_egg_price_2nd_quality_dollar_egg"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -279,6 +287,7 @@
             <EditText
                 android:id="@+id/et_egg_price_2nd_quality_dollar_kg"
                 android:layout_width="match_parent"
+                android:maxLength="10"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
@@ -341,6 +350,7 @@
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/spinner_background"
                 android:inputType="numberDecimal"
+                android:maxLength="10"
                 android:textColor="@color/mainGreen" />
 
         </LinearLayout>
@@ -362,7 +372,7 @@
                 android:text="Aivlosin dosage mg/kg BW/day"
                 android:textColor="@color/mainGreen" />
 
-            <EditText
+            <TextView
                 android:id="@+id/et_Aivlosin_dosage_mg_kg_BW_day"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
@@ -424,7 +434,7 @@
                 android:text="Aivlosin 1 g activity price ($)"
                 android:textColor="@color/mainGreen" />
 
-            <EditText
+            <TextView
                 android:id="@+id/et_Aivlosin_1_g_activity_price_dollar"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
@@ -518,7 +528,7 @@
                 android:text="Aivlosin needs in g per hen for treatment"
                 android:textColor="@color/mainGreen" />
 
-            <EditText
+            <TextView
                 android:id="@+id/et_Aivlosin_needs_in_g_per_hen_for_treatment"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
@@ -549,7 +559,7 @@
                 android:text="Aivlosin cost per hen"
                 android:textColor="@color/mainGreen" />
 
-            <EditText
+            <TextView
                 android:id="@+id/et_Aivlosin_cost_per_hen"
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
@@ -579,7 +589,7 @@
                 android:text="Aivlosin cost per hen"
                 android:textColor="@color/mainGreen" />
 
-            <EditText
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="?android:attr/actionBarSize"
                 android:background="@drawable/et_bg"

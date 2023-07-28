@@ -10,10 +10,12 @@ import androidx.navigation.fragment.findNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.cs.ecohealth.R
 import com.cs.ecohealth.databinding.FragmentWeightBinding
+import com.cs.ecohealth.screens.utils.TinyDB
 
 class WeightFragment : Fragment() {
 
     private lateinit var binding: FragmentWeightBinding
+    private lateinit var tinyDB : TinyDB
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -21,7 +23,7 @@ class WeightFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentWeightBinding.inflate(inflater, container, false)
-
+        tinyDB = TinyDB(context)
 
         binding.btnLangNext.setOnClickListener {
             findNavController().navigate(R.id.action_weightFragment_to_currencyFragment)

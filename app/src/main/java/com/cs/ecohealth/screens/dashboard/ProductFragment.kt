@@ -1,16 +1,19 @@
 package com.cs.ecohealth.screens.dashboard
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.WindowManager
 import com.cs.ecohealth.databinding.FragmentProductBinding
+import com.cs.ecohealth.screens.utils.TinyDB
 
 class ProductFragment : Fragment() {
 
     private lateinit var binding: FragmentProductBinding
+    private lateinit var tinyDB : TinyDB
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,6 +21,11 @@ class ProductFragment : Fragment() {
     ): View? {
         activity?.window?.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         binding = FragmentProductBinding.inflate(inflater, container, false)
+        tinyDB = TinyDB(context)
+
+        tinyDB.getString("One")
+        tinyDB.getString("Two")
+        tinyDB.getString("Three")
 
         binding.expandableData1.parentLayout.setOnClickListener {
             if (binding.expandableData1.isExpanded){
